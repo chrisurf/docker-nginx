@@ -1,0 +1,10 @@
+version: '3'
+services:
+  website:
+    image: nginx
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./html:/var/www/html
