@@ -6,7 +6,7 @@
 docker build . -t nginx
 ```
 
-### Run the docker image
+### Run the docker container
 ```
 docker-compose -f nginx.yaml up
 ```
