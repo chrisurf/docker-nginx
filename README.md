@@ -1,15 +1,25 @@
-# Nginx webserver docker image
+# Nginx Image
 
-### Build a local docker image
+This is a basic Hello World [Nginx](https://www.nginx.com/) container image for testing purposes. It serves a basic "Hello, World!" message and listens on port 80.
 
-```
-docker build . -t nginx
+## Usage
+
+You can run this container using Docker with the following command:
+
+```bash
+docker run -d -p 80:80 chrisurf/nginx-hello:latest
 ```
 
-### Run the docker container
-```
-docker-compose -f nginx.yaml up
-```
+This will start the Nginx container, and you can access it in your web browser by navigating to `http://localhost`. You should see a "Hello, World!" message.
 
-### Notes
-The image will mount "/var/www/html" as a volume to ./html. Just copy your html content in the html directory.
+## Docker Hub
+
+The Docker image is available on Docker Hub at the following URL:
+
+[chrisurf/nginx-hello:latest](https://hub.docker.com/r/chrisurf/nginx-hello)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Feel free to use this image for testing and development purposes.
